@@ -39,7 +39,7 @@ input {
 
 #quiz-title {
 	text-align: center;
-	font-size: 3rem;
+	font-size: 48px;
 	letter-spacing: 0.1em;
 	height: 100%;
 
@@ -58,7 +58,7 @@ input {
 	display: inline-block;
 	width: 45%;
 	height: 15px;
-	font-size: 1.4rem;
+	font-size: 23px;
 }
 
 
@@ -66,7 +66,7 @@ input {
 	display: inline-block;
 	width: 45%;
 	height: 15px;
-	font-size: 1.4rem;
+	font-size: 23px;
 }
 
 #q-and-a {
@@ -76,7 +76,7 @@ input {
 }
 
 #question {
-	font-size: 1.4rem;
+	font-size: 23px;
 	height: 36px;
 
 }
