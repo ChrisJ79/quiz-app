@@ -10,7 +10,6 @@ html {
 
 body {
 	text-align: center;
-
 }
 
 
@@ -20,11 +19,14 @@ body {
 
 
 
+
 #text-container {
 	text-align: center;
 	top: 50px;
 	padding-top: 10px;
 	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
 	width: 640px;
 	margin-top: 20px;
 	margin-left: 600px;
@@ -32,9 +34,6 @@ body {
 	background: rgba(60, 60, 60, 0.2);
 	min-height: 100%;
 	font-family: 'Amatic SC';
-    margin-left: auto;
-    margin-right: auto;
-
 
 }
 
@@ -44,7 +43,7 @@ body {
 	height: 100%;
 }
 
-#greeting-text {
+#text {
 	text-align: center;
 	font-size: 23px;
 }
