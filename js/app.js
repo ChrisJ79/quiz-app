@@ -50,7 +50,11 @@ $(document).ready(function () {
 
 		$('#choices').empty();	
 
-		
+		var totalNumberOfChoices = questionsArray[currentQuestionNumber].questionChoices/*???*/.length;
+
+		for (var i = 0; i < totalNumberOfChoices; i++) {
+			var buildEachChoiceHTML = "<input type='radio' class='option' name='option' value=" + i + ">" + questionsArray[currentQuestionNumber].questionChoices[i] + "<br>";
+		}
 	}
 
 
