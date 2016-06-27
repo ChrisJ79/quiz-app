@@ -46,7 +46,11 @@ $(document).ready(function () {
 
 	function questionStats() {
 
-		$
+	    $('#question').text(questionsArray[currentQuestionNumber].//questionText?!?!?!?!?
+
+		$('#choices').empty();	
+
+		
 	}
 
 
