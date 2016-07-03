@@ -1,9 +1,8 @@
-$(document).ready(function () {
+
 	
-
-
-/*----DEFINE THE GLOBAL VARIABLES----*/	
-	var questionsArray [
+/*----PHASE 1 ---> DEFINE THE GLOBAL VARIABLES----*/
+	// Define all questions, possible answers, and correct answers as an array of objects in a variable.	
+	var questionsArray = [
 
 		{
 			question: 'Approximately what year did construction of the famous Protestant church Grossmunster begin?',
@@ -37,25 +36,55 @@ $(document).ready(function () {
 
 	];
 
+	//  Define the other global variables that will be used in the script.
 	var currentQuestionNumber = 0;
-	var totalNumberOfQuestions = 5;
+	var numberOfQuestions = 5;
 	var numberOfCorrectAnswers = 0;
 
 
-/*----DEFINE THE FUNCTIONS----*/	
+/*----PHASE 2 ---> DEFINE THE FUNCTIONS----*/	
 
-	function questionStats() {
-
-	    $('#question').text(questionsArray[currentQuestionNumber].//questionText?!?!?!?!?
-
+	function questionDisplay() {
+		// This will update the text of each question.
+	    $('#question').text(questionsArray[currentQuestionNumber].question);
+		// This empties the #choices ID, that will eventually list out the answer choices.
 		$('#choices').empty();	
 
-		var totalNumberOfChoices = questionsArray[currentQuestionNumber].questionChoices/*???*/.length;
-
+		// This local variable will get the total number of choices for the current question.
+		var totalNumberOfChoices = questionsArray[currentQuestionNumber].answerChoices.length;
+		// This will iterate through the answer choices, create a row for each of them, then append each choice to the <div> with 'choices' ID attribute.
 		for (var i = 0; i < totalNumberOfChoices; i++) {
-			var buildEachChoiceHTML = "<input type='radio' class='option' name='option' value=" + i + ">" + questionsArray[currentQuestionNumber].questionChoices[i] + "<br>";
+			var buildEachChoiceHTML = "<input type='radio' class='option' name='option' value=" + i + ">" + questionsArray[currentQuestionNumber].question[i] + "<br>";
 		}
-	}
+		// This will iterate through the array of question numbers and append the number of each question to the page.
+		$('#quest-number').text("Question " + (currentQuestionNumber + 1) + " of " + numberOfQuestions);
+	};
+
+/*----PHASE 3 ---> USE THE FUNCTIONS----*/
+// The page loads....
+$(document).ready(function() {
+	// This jQuery hides the 'quiz-questions' and 'end-quiz' sections upon load of the page.
+	$('.quiz-questions').hide();
+	$('.end-quiz').hide();
+	// 
+	$('.begin-button').click(function () {
+		$('.end-quiz').hide();
+        $('.start-quiz').hide();
+        $('.quiz-questions').show();
+    	//empty the result details container
+        $('#score-results').empty();
+        questionDisplay();
+
+  	});
+
+	// THIS IS WHERE I LEFT OFF.....
+    $('.quiz-section').on('click', '.option', function () {};
+
+});
 
 
-}
+
+
+
+
+
