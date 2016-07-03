@@ -173,9 +173,14 @@ input {
 */
 
 
-#results-text {
+#results-good {
 	text-align: center;
 }
+
+#results-bad {
+	text-align: center;
+}
+
 
 .try-again-button {
 	text-align: center;
@@ -185,8 +190,6 @@ input {
 	width: 130px;
 	height: 30px;
 }
-
-
 
 
 /*
