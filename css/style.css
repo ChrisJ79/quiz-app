@@ -5,12 +5,9 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
 }
 
 
-body {
-}
 
 /*-----QUESTION BOX-----*/
 
@@ -42,9 +39,8 @@ input {
 	font-size: 48px;
 	letter-spacing: 0.1em;
 	height: 100%;
-
-
 }
+
 
 #stats {
 	display: inline-block;
@@ -72,13 +68,11 @@ input {
 #q-and-a {
 	margin-left: 40px;
 	padding-top: 15px;
-
 }
 
 #question {
 	font-size: 23px;
 	height: 36px;
-
 }
 
 
@@ -111,7 +105,6 @@ input {
 
 #restart-button {
 	text-align: center;
-
 }
 
 .button {
