@@ -5,22 +5,20 @@ html {
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
 }
 
 
-body {
-}
+/*--------START-QUIZ-SECTION--------*/
 
-/*-----QUESTION BOX-----*/
-
+/*
 input {
 	vertical-align: middle;
 	margin-right: 10px;
 }
+*/
 
 
-#text-container {
+.start-quiz {
 	top: 50px;
 	padding-top: 10px;
 	padding-bottom: 15px;
@@ -33,17 +31,74 @@ input {
 	font-family: 'Amatic SC';
     margin-left: auto;
     margin-right: auto;
-
-
 }
 
-#quiz-title {
+.text-box {
+	text-align: center;
+	font-size: 26px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.quiz-title {
 	text-align: center;
 	font-size: 48px;
 	letter-spacing: 0.1em;
 	height: 100%;
+}
 
 
+.begin-button {
+	text-align: center;
+	background: rgba(60, 60, 60, 0.5);
+	border: none;
+	border-radius: 5px;
+	width: 130px;
+	height: 30px;
+}
+
+/*--------QUIZ-QUESTIONS-SECTION--------*/
+
+
+.quiz-questions {
+	top: 50px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	width: 640px;
+	margin-top: 20px;
+	margin-left: 600px;
+	border-radius: 8px;
+	background: rgba(60, 60, 60, 0.2);
+	min-height: 100%;
+	font-family: 'Amatic SC';
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*
+.text-box {
+	text-align: center;
+	font-size: 23px;
+}
+*/
+
+
+/*
+.quiz-title {
+	text-align: center;
+	font-size: 48px;
+	letter-spacing: 0.1em;
+	height: 100%;
+}
+*/
+
+.restart-button {
+	text-align: center;
+	background: rgba(60, 60, 60, 0.5);
+	border: none;
+	border-radius: 5px;
+	width: 130px;
+	height: 30px;
 }
 
 #stats {
@@ -53,12 +108,11 @@ input {
 	text-align: center;
 }
 
-
 #quest-number {
 	display: inline-block;
 	width: 45%;
 	height: 15px;
-	font-size: 23px;
+
 }
 
 
@@ -66,55 +120,64 @@ input {
 	display: inline-block;
 	width: 45%;
 	height: 15px;
-	font-size: 23px;
+
 }
 
 #q-and-a {
 	margin-left: 40px;
 	padding-top: 15px;
-
 }
 
 #question {
-	font-size: 23px;
 	height: 36px;
-
 }
 
 
-#poss-answer-a {
-	height: 15px;
+#choices {
+	display: inline-block;
+}
+
+
+/*--------END-QUIZ-SECTION--------*/
+
+.end-quiz {
+	top: 50px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	width: 640px;
+	margin-top: 20px;
+	margin-left: 600px;
+	border-radius: 8px;
+	background: rgba(60, 60, 60, 0.2);
 	min-height: 100%;
-	font-size: 1.3rem;
+	font-family: 'Amatic SC';
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#poss-answer-b {
-	height: 15px;
-	font-size: 1.3rem;
-}
-
-#poss-answer-c {
-	height: 15px;
-	font-size: 1.3rem;
-}
-
-#poss-answer-d {
-	height: 15px;
-	font-size: 1.3rem;
-}
-
-#poss-answer-e {
-	height: 15px;
-	font-size: 1.3rem;
-
-}
-
-#restart-button {
+/*
+.text-box {
 	text-align: center;
+	font-size: 23px;
+}
+*/
 
+
+/*
+.quiz-title {
+	text-align: center;
+	font-size: 48px;
+	letter-spacing: 0.1em;
+	height: 100%;
+}
+*/
+
+
+#results-text {
+	text-align: center;
 }
 
-.button {
+.try-again-button {
 	text-align: center;
 	background: rgba(60, 60, 60, 0.5);
 	border: none;
