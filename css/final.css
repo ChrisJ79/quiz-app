@@ -92,14 +92,6 @@ input {
 }
 */
 
-.restart-button {
-	text-align: center;
-	background: rgba(60, 60, 60, 0.5);
-	border: none;
-	border-radius: 5px;
-	width: 130px;
-	height: 30px;
-}
 
 #stats {
 	display: inline-block;
@@ -112,7 +104,6 @@ input {
 	display: inline-block;
 	width: 45%;
 	height: 15px;
-
 }
 
 
@@ -120,11 +111,9 @@ input {
 	display: inline-block;
 	width: 45%;
 	height: 15px;
-
 }
 
 #q-and-a {
-	margin-left: 40px;
 	padding-top: 15px;
 }
 
@@ -134,7 +123,13 @@ input {
 
 
 #choices {
-	display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    width: 65%;
+    letter-spacing: 0.04em;
+    text-shadow: 2px 0 0 #3fad97, -2px 0 0 #3fad97, 0 2px 0 #3fad97, 0 -2px 0 #3fad97, 1px 1px #3fad97, -1px -1px 0 #3fad97, 1px -1px 0 #3fad97, -1px 1px 0 #3fad97;
+
 }
 
 
@@ -192,18 +187,3 @@ input {
 }
 
 
-/*
-
-.container {
-	padding: 15px 0 18px 18px;
-	position: relative;
-	width: 586px;
-	height: 400px;
-	min-height: 100%;
-	background-color: rgba(153, 153, 153, 0.7);
-	top: 110px;
-	left: 100px;
-	border-radius: 5px;
-}
-
-*/
