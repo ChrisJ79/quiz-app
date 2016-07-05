@@ -24,18 +24,18 @@
 	<section class="quiz-questions">
 		<div class="text-box">
 			<h1 class="quiz-title">ZÜRICH QUIZ</h1>
-					<button class="restart-button"><b>RESTART QUIZ</b></button>
+				<!--<button class="restart-button"><b>RESTART QUIZ</b><button>-->
 			<div id="stats">
-				<p id="quest-number">Question: 1/5</p>
-				<p id="quiz-score">Score: 1</p>
+				<p id="quest-number">Question: </p>
+				<!--<p id="quiz-score"></p>-->
 			</div>
 			<div id="q-and-a">
-				<p id="question">Approximately what year did construction of the famous Protestant church Grossmunster begin?</p>
+				<p id="question"></p>
 				<div id="choices">
-					<input class="option" type="radio" value="0">
-					<input class="option" type="radio" value="1">
-					<input class="option" type="radio" value="2">
-					<input class="option" type="radio" value="3">
+					<input class="option" type="radio" name="option" value="0">
+					<input class="option" type="radio" name="option" value="1">
+					<input class="option" type="radio" name="option" value="2">
+					<input class="option" type="radio" name="option" value="3">
 				</div>
 			</div>
 		</div>
@@ -49,7 +49,7 @@
 			<div id="results-good">
 	  			<h3>Congratulations!! Turns out you know a thing or two about Zurich, after all!</h3>
 			</div>
-			<div class="results-bad">
+			<div id="results-bad">
 				<h3>Ooh!!  Ouch...  You obviously don't know as much about Zurich as you thought you did.  Click the button below to give it another shot!</h3>
 	    		<button class="try-again-button">TRY AGAIN</button>
 			</div>
