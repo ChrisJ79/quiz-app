@@ -105,7 +105,7 @@ $(document).ready(function() {
             // Shows the final score.
             $('#score-results').text("Final Score: " + numberOfCorrectAnswers + "/" + numberOfQuestions);
 
-
+    	// Decides whether the results of the quiz were 'good' or 'bad'...
 		if (numberOfCorrectAnswers > 3) {
 			$("#results-bad").hide();		
 			$("#results-good").show();
@@ -114,7 +114,7 @@ $(document).ready(function() {
 				$("#results-bad").show();
 				}
 
-            // Hides the other sections.
+            // Hides the other sections, and shows the 'end-quiz' if you completed the quiz.
             $('.quiz-questions').hide();
             $('.start-quiz').hide();
             $('.end-quiz').show();
